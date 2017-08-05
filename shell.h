@@ -7,6 +7,7 @@ public:
     ~Shell();
 private:
     //shape
+
     //orientation
     int teamId;
     int cooX;
