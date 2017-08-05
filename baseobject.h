@@ -4,7 +4,7 @@
 class BaseObject {
 public:
     BaseObject();
-    BaseObject(int length, int widgh, int cooX, int cooY);
+    BaseObject(int, int, int, int);
     ~BaseObject();
     int getLength();
     int getWidth();

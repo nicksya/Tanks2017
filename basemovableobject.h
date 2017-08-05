@@ -6,15 +6,16 @@
 
 class BattleField;
 
-class BaseMovableObject : BaseObject {
+class BaseMovableObject : public BaseObject {
 public:
     BaseMovableObject();
-    BaseMovableObject(BattleField*, Direction*, int);
+    BaseMovableObject(BattleField*, Direction*, int speed = 1, int length = 4, int width = 4, int cooX = 0, int cooY = 0);
     Direction* getDirection();
+    int getSpeed();
 private:
     BattleField* field;
     Direction* direction;
-    void move(BaseObject*);
+    void move(BaseObject&);
     int speed;
 };
 

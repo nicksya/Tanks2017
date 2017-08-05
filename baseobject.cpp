@@ -1,9 +1,9 @@
 #include "baseobject.h"
 
-BaseObject::BaseObject() {}
+BaseObject::BaseObject() : length(4), width(4), cooX(0), cooY(0) {}
 
 BaseObject::BaseObject(int length, int width, int cooX, int cooY) : length(length), width(width),
-    cooX(cooY), cooY(cooY) {}
+    cooX(cooX), cooY(cooY) {}
 
 BaseObject::~BaseObject() {}
 
